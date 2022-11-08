@@ -6,14 +6,13 @@ pygame.init()
 FPS = 30
 screen = pygame.display.set_mode((400, 400))
 
-rect(screen, (255, 0, 255), (100, 100, 200, 200))
-rect(screen, (0, 0, 255), (100, 100, 200, 200), 5)
-polygon(screen, (255, 255, 0), [(100,100), (200,50),
+rect(screen, (255, 250, 5), (100, 100, 200, 200))
+polygon(screen, (150, 100, 10), [(100,100), (200,50),
                                (300,100), (100,100)])
-polygon(screen, (0, 0, 255), [(100,100), (200,50),
+polygon(screen, (200, 110, 10), [(100,100), (200,50),
                                (300,100), (100,100)], 5)
-circle(screen, (0, 255, 0), (200, 175), 50)
-circle(screen, (255, 255, 255), (200, 175), 50, 5)
+circle(screen, (2, 255, 225), (200, 200), 50)
+circle(screen, (2, 255, 240), (200, 200), 50, 5)
 
 pygame.display.update()
 clock = pygame.time.Clock()
