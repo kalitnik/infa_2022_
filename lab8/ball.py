@@ -71,11 +71,11 @@ def click(event):
         print('Click!')
         m += 1
     elif a <= event.x and event.x <= a+del1:
-        if (b <= event.y and event.y <= b+25) or (b+del2 <= event.y and event.y <= b+del2+25):
+        if (b <= event.y and event.y <= b+25) or (b+del2 <= event.y and event.y <= b+del2-25):
             m2 += 2
             print('Clik!!!')
     elif b <= event.y and event.y <= b+del2:
-        if (a <= event.x and event.x <= a+25) or (a+del1 <= event.x and event.x <= a+del1+25):
+        if (a <= event.x and event.x <= a+25) or (a+del1 <= event.x and event.x <= a+del1-25):
             m2 += 2
             print('Clik!!!')
     else:
